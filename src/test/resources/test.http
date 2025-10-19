@@ -1,0 +1,21 @@
+
+GET http://localhost:8080/health
+
+### Low Level API: ChatModel
+GET http://localhost:8080/model?message=What is the capital of Germany?
+
+### High Level API: AI Service with tools
+POST http://localhost:8080/assistant
+Content-Type: application/json
+
+{
+  "message": "What is the current time?"
+}
+
+### High Level API: Streaming AI Service with tools
+POST http://localhost:8080/assistant/streaming
+Content-Type: application/json
+
+{
+  "message": "What is the current time?"
+}
