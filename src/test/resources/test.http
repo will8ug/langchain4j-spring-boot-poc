@@ -1,8 +1,13 @@
 
-GET http://localhost:8080/health
+GET http://localhost:8080/api/chat/health
 
-### Low Level API: ChatModel
-GET http://localhost:8080/model?message=What is the capital of Germany?
+POST http://localhost:8080/api/chat
+Content-Type: application/json
+
+{
+  "message": "What is the capital of China?"
+}
+
 
 ### High Level API: AI Service with tools
 POST http://localhost:8080/assistant
